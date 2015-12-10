@@ -1,0 +1,4 @@
+App de ruby on rails con Postgresql
+Un ejemplo de uso de hstore para guardar datos.
+
+pagina del tutorial: [vincentblog.me/posts/como-usar-hstore-y-json-de-postgresql-con-rails](http://vincentblog.me/posts/como-usar-hstore-y-json-de-postgresql-con-rails)

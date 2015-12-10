@@ -1,0 +1,15 @@
+<%= form_for(@car) do |f| %>
+  <%= f.label "Nombre:"%>
+  <%= f.text_field :name %> <br>
+  <%= f.label "Color:"%> 
+  <%= f.text_field :color %> <br>
+  <%= f.fields_for :user_preferences do |p| %>
+    <%= f.label "Transmision:"%>
+    <%= p.select :transmission, options_for_select(["Automatica", "Manual"]) %> <br>
+    <%= f.label "Numero de puertas:"%>
+    <%= p.select :doors_num, options_for_select(["4", "3"]) %> <br>
+    <%= f.label "Llantas:"%>
+    <%= p.select :wheels, options_for_select(["15", "17"]) %> <br>
+  <% end %>
+  <%= f.button "crear" %>
+<% end %>

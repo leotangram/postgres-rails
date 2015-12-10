@@ -1,0 +1,6 @@
+<%= @car.name %> <br>
+<%= @car.color %>  <br>
+<% @car.user_preferences.each do |set| %>
+  <%= set[0]%>
+  <%= set[1]%> <br>
+<% end %>
